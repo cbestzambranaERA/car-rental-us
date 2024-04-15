@@ -6,19 +6,19 @@ import driverImg from "../../assets/all-images/toyota-offer-2.png";
 
 const BecomeDriverSection = () => {
   return (
-    <section className="become__driver">
+    <section className="become-driver bg-center bg-no-repeat bg-cover px-0 py-20 text-center">
       <Container>
         <Row>
-          <Col lg="6" md="6" sm="12" className="become__driver-img">
-            <img src={driverImg} alt="" className="w-100" />
+          <Col lg="6" md="6" sm="12" className="become-driver-img hidden">
+            <img src={driverImg} alt="" className="w-full" />
           </Col>
 
           <Col lg="6" md="6" sm="12">
-            <h2 className="section__title become__driver-title">
+            <h2 className="section-title become-driver-title text-white text-2xl leading-[3rem]">
               Do You Want to Earn With Us? So Don't Be Late
             </h2>
 
-            <button className="btn become__driver-btn mt-4">
+            <button className="btn become-driver-btn text-[#000d6b] font-semibold mt-[1.5rem] text-[0.8rem]">
               Become a Driver
             </button>
           </Col>

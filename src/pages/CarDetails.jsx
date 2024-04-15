@@ -22,19 +22,19 @@ const CarDetails = () => {
         <Container>
           <Row>
             <Col lg="6">
-              <img src={singleCarItem.imgUrl} alt="" className="w-100" />
+              <img src={singleCarItem.imgUrl} alt="" className="w-full" />
             </Col>
 
             <Col lg="6">
-              <div className="car__info">
-                <h2 className="section__title">{singleCarItem.carName}</h2>
+              <div className="car-info">
+                <h2 className="section-title">{singleCarItem.carName}</h2>
 
-                <div className=" d-flex align-items-center gap-5 mb-4 mt-3">
-                  <h6 className="rent__price fw-bold fs-4">
+                <div className="flex items-center gap-5 mb-4 mt-3">
+                  <h6 className="rent-price fw-bold fs-4">
                     ${singleCarItem.price}.00 / Day
                   </h6>
 
-                  <span className=" d-flex align-items-center gap-2">
+                  <span className="flex items-center gap-2">
                     <span style={{ color: "#f9a826" }}>
                       <i class="ri-star-s-fill"></i>
                       <i class="ri-star-s-fill"></i>
@@ -46,15 +46,15 @@ const CarDetails = () => {
                   </span>
                 </div>
 
-                <p className="section__description">
+                <p className="section-description">
                   {singleCarItem.description}
                 </p>
 
                 <div
-                  className=" d-flex align-items-center mt-3"
+                  className="flex items-center mt-3"
                   style={{ columnGap: "4rem" }}
                 >
-                  <span className=" d-flex align-items-center gap-1 section__description">
+                  <span className="flex items-center gap-1 section-description">
                     <i
                       class="ri-roadster-line"
                       style={{ color: "#f9a826" }}
@@ -62,7 +62,7 @@ const CarDetails = () => {
                     {singleCarItem.model}
                   </span>
 
-                  <span className=" d-flex align-items-center gap-1 section__description">
+                  <span className="flex items-center gap-1 section-description">
                     <i
                       class="ri-settings-2-line"
                       style={{ color: "#f9a826" }}
@@ -70,7 +70,7 @@ const CarDetails = () => {
                     {singleCarItem.automatic}
                   </span>
 
-                  <span className=" d-flex align-items-center gap-1 section__description">
+                  <span className="flex items-center gap-1 section-description">
                     <i
                       class="ri-timer-flash-line"
                       style={{ color: "#f9a826" }}
@@ -80,15 +80,15 @@ const CarDetails = () => {
                 </div>
 
                 <div
-                  className=" d-flex align-items-center mt-3"
+                  className="flex items-center mt-3"
                   style={{ columnGap: "2.8rem" }}
                 >
-                  <span className=" d-flex align-items-center gap-1 section__description">
+                  <span className="flex items-center gap-1 section-description">
                     <i class="ri-map-pin-line" style={{ color: "#f9a826" }}></i>{" "}
                     {singleCarItem.gps}
                   </span>
 
-                  <span className=" d-flex align-items-center gap-1 section__description">
+                  <span className="flex items-center gap-1 section-description">
                     <i
                       class="ri-wheelchair-line"
                       style={{ color: "#f9a826" }}
@@ -96,7 +96,7 @@ const CarDetails = () => {
                     {singleCarItem.seatType}
                   </span>
 
-                  <span className=" d-flex align-items-center gap-1 section__description">
+                  <span className="flex items-center gap-1 section-description">
                     <i
                       class="ri-building-2-line"
                       style={{ color: "#f9a826" }}
@@ -115,7 +115,7 @@ const CarDetails = () => {
             </Col>
 
             <Col lg="5" className="mt-5">
-              <div className="payment__info mt-5">
+              <div className="payment-info mt-5">
                 <h5 className="mb-4 fw-bold ">Payment Information</h5>
                 <PaymentMethod />
               </div>
